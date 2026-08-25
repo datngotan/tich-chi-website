@@ -50,6 +50,7 @@
       "link": "https://s.shopee.vn/9zxDk8NRCR"
     }
   ],
-  "coolDownFullScreenAdsDay": 48,
-  "enableFullScreenAds": true
+  "coolDownFullScreenAdsDay": 24,
+  "enableFullScreenAds": true,
+  "openLinkWhenAdsClosed": true
 }
