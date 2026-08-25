@@ -49,5 +49,7 @@
       "image": "https://down-bs-vn.img.susercontent.com/vn-11134207-81ztc-mrn8rznkavwld9.webp",
       "link": "https://s.shopee.vn/9zxDk8NRCR"
     }
-  ]
+  ],
+  "coolDownFullScreenAdsDay": 48,
+  "enableFullScreenAds": true
 }
