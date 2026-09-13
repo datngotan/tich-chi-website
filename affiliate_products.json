@@ -92,7 +92,7 @@
       "link": "https://s.shopee.vn/6fhAvD70ln"
     }
   ],
-  "coolDownFullScreenAdHours": 24,
+  "coolDownFullScreenAdHours": 48,
   "enableFullScreenAd": true,
   "openLinkWhenAdClosed": true
 }
