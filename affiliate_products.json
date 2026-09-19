@@ -87,5 +87,6 @@
   ],
   "coolDownFullScreenAdHours": 24,
   "enableFullScreenAd": true,
-  "openLinkWhenAdClosed": true
+  "openLinkWhenAdClosed": true,
+  "showAdBanner": false
 }
