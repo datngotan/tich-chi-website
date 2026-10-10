@@ -1,0 +1,71 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Bàn Làm Việc Nâng Hạ Mặt Xoay 360°",
+      "price": 1449000,
+      "image": "https://down-bs-vn.img.susercontent.com/vn-11134207-81ztc-mpbpv4ng7b4be3.webp",
+      "link": "https://s.shopee.vn/40gth1dmnt"
+    },
+    {
+      "id": 2,
+      "name": "Đồng vàng 24K Phúc Lành Bình An 0.1 chỉ",
+      "price": 1507000,
+      "image": "https://down-bs-vn.img.susercontent.com/vn-11134207-81ztc-mrpahal0xame51.webp",
+      "link": "https://s.shopee.vn/9peIecHuOl"
+    },
+    {
+      "id": 3,
+      "name": "Bộ Sưu Tập Ngũ Hành 24k Bản Vị 0.1 chỉ Huy Thanh Jewelry (KÈM LÌ XÌ)",
+      "price": 1592000,
+      "image": "https://down-bs-vn.img.susercontent.com/vn-11134207-81ztc-mrb4ufk107pce9.webp",
+      "link": "https://s.shopee.vn/5fp7fzeoaN"
+    },
+    {
+      "id": 6,
+      "name": "Đồng vàng 24K Phúc bảo đầu đời - Em bé mơ 0.1 chỉ Bảo Tín Mạnh Hải",
+      "price": 1507000,
+      "image": "https://down-bs-vn.img.susercontent.com/vn-11134207-81ztc-mteqfvpnf9c89d.webp",
+      "link": "https://s.shopee.vn/6fherbsLkC"
+    },
+    {
+      "id": 7,
+      "name": "[8 lốc] Giấy vệ sinh treo tường Top Gia đa sắc đa năng từ bột giấy thiên nhiên",
+      "price": 78000,
+      "image": "https://down-bs-vn.img.susercontent.com/vn-11134207-81ztc-mrn8rznkavwld9.webp",
+      "link": "https://s.shopee.vn/9zxDk8NRCR"
+    },
+    {
+      "id": 8,
+      "name": "Đồng vàng 24K Một đời chung đôi - Nâng ly hạnh phúc 0.1 chỉ Bảo Tín Mạnh Hải",
+      "price": 1507000,
+      "image": "https://down-bs-vn.img.susercontent.com/vn-11134207-81ztc-mtepfmtuafpjdc.webp",
+      "link": "https://s.shopee.vn/1gIyuTC1q0"
+    },
+    {
+      "id": 9,
+      "name": "COMBO LỚN 10 bịch rút đáy mộc an Topgia 1000 tờ",
+      "price": 99000,
+      "image": "https://down-bs-vn.img.susercontent.com/vn-11134207-81ztc-msxlifz1vnyd9b.webp",
+      "link": "https://s.shopee.vn/5LBtHdo3zo"
+    },
+    {
+      "id": 10,
+      "name": "Máy Hút Bụi Giường Nệm Cầm Tay KYTO",
+      "price": 349000,
+      "image": "https://down-tx-vn.img.susercontent.com/vn-11134207-81ztc-mst7o446eo79f7.webp",
+      "link": "https://s.shopee.vn/AUu4VIK8Il"
+    },
+    {
+      "id": 11,
+      "name": "Nhẫn Tiết Kiệm Vàng 24k 0.1 Chỉ Huy Thanh Jewelry",
+      "price": 1592000,
+      "image": "https://down-tx-vn.img.susercontent.com/vn-11134207-820l4-mi906r1qw1z4aa.webp",
+      "link": "https://s.shopee.vn/9fLUhs6JBx"
+    }
+  ],
+  "coolDownFullScreenAdHours": 24,
+  "enableFullScreenAd": true,
+  "openLinkWhenAdClosed": true,
+  "showAdBanner": true
+}
