@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Tích Chỉ Vàng - Theo Dõi Giá Vàng & Bạc Realtime | Hơn 50 Tiệm Vàng</title>
+  <meta name="title" content="Tích Chỉ Vàng - Theo Dõi Giá Vàng & Bạc Realtime | Hơn 50 Tiệm Vàng" />
+  <meta name="description" content="Tích Chỉ Vàng là ứng dụng giúp bạn theo dõi giá vàng hôm nay (SJC, 9999, 24K) và giá bạc nhanh chóng, rõ ràng từ hơn 50 tiệm vàng trên toàn quốc. Cập nhật realtime, widget màn hình chính và thông báo tức thì." />
+  <meta name="keywords" content="giá vàng hôm nay, giá vàng sjc, giá vàng 9999, giá vàng 24k, giá bạc, tích chỉ vàng, widget giá vàng, app theo dõi giá vàng, doji, pnj, bảo tín minh châu, mi hồng" />
+  <meta name="author" content="Tích Chỉ Vàng" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://datngotan.github.io/tich-chi-website/" />
+  <meta property="og:title" content="Tích Chỉ Vàng - Theo Dõi Giá Vàng & Bạc Realtime" />
+  <meta property="og:description" content="Theo dõi giá vàng hôm nay SJC, 9999, 24K và giá bạc từ hơn 50 tiệm vàng trên toàn quốc. Widget màn hình chính tiện lợi, thông báo realtime." />
+  <meta property="og:image" content="https://datngotan.github.io/tich-chi-website/assets/app-icon.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://datngotan.github.io/tich-chi-website/" />
+  <meta property="twitter:title" content="Tích Chỉ Vàng - Theo Dõi Giá Vàng & Bạc Realtime" />
+  <meta property="twitter:description" content="Theo dõi giá vàng hôm nay SJC, 9999, 24K và giá bạc từ hơn 50 tiệm vàng trên toàn quốc." />
+  <meta property="twitter:image" content="https://datngotan.github.io/tich-chi-website/assets/app-icon.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/app-icon.jpg" />
+  <link rel="apple-touch-icon" href="assets/app-icon.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style/style.css" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Tích Chỉ Vàng",
+    "operatingSystem": "Android, iOS",
+    "applicationCategory": "FinanceApplication",
+    "description": "Ứng dụng theo dõi giá vàng hôm nay (SJC, 9999, 24K) và giá bạc realtime từ hơn 50 tiệm vàng uy tín trên toàn quốc.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "VND"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Dat Ngo"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand" aria-label="Tích Chỉ Vàng Home">
+        <div class="brand-icon">
+          <img src="assets/app-icon.jpg" alt="Logo Tích Chỉ Vàng" width="44" height="44" />
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-title">Tích Chỉ Vàng</span>
+          <span class="brand-subtitle">Giá Vàng & Bạc Realtime</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#why-us" class="nav-link">Vì Sao Chọn</a></li>
+          <li><a href="#features" class="nav-link">Tính Năng</a></li>
+          <li><a href="#widget" class="nav-link">Widget</a></li>
+          <li><a href="#audience" class="nav-link">Đối Tượng</a></li>
+          <li><a href="#download" class="nav-link">Tải App</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://play.google.com/store/apps/details?id=com.dat.tichchi&hl=en" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="navDownloadBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 0 1-.61-.944V2.758c.175-.36.386-.684.609-.944zm11.306 11.308l2.257 2.257-11.758 6.786 9.501-9.043zm2.258-2.258l-2.258 2.258-9.501-9.043 11.759 6.785zm1.127 1.128l3.414 1.972c1.066.616 1.066 1.623 0 2.239l-3.414 1.972-2.37-2.091 2.37-2.092z"/>
+          </svg>
+          <span>Tải Miễn Phí</span>
+        </a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="announcement-badge">
+            <span class="pulse-dot"></span>
+            <span>Hỗ trợ hơn 50 tiệm vàng trên toàn quốc</span>
+          </div>
+
+          <h1 class="hero-title">
+            Theo Dõi Giá Vàng & Bạc <span class="gradient-text">Realtime</span> Nhanh Chóng, Chính Xác
+          </h1>
+
+          <p class="hero-desc">
+            <strong>Tích Chỉ Vàng</strong> là ứng dụng giúp bạn cập nhật giá vàng, giá bạc tức thì, rõ ràng và tiện lợi để không bỏ lỡ các biến động quan trọng mỗi ngày. Hỗ trợ đa dạng loại vàng như <strong>SJC, vàng 9999, vàng 24K</strong> từ các thương hiệu uy tín cùng hệ thống widget và thông báo thông minh ngay trên điện thoại.
+          </p>
+
+          <div class="hero-actions">
+            <!-- Google Play Store Button -->
+            <a href="https://play.google.com/store/apps/details?id=com.dat.tichchi&hl=en" target="_blank" rel="noopener noreferrer" class="btn-store google-play" id="heroGooglePlayBtn">
+              <div class="btn-store-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 0 1-.61-.944V2.758c.175-.36.386-.684.609-.944zm11.306 11.308l2.257 2.257-11.758 6.786 9.501-9.043zm2.258-2.258l-2.258 2.258-9.501-9.043 11.759 6.785zm1.127 1.128l3.414 1.972c1.066.616 1.066 1.623 0 2.239l-3.414 1.972-2.37-2.091 2.37-2.092z"/>
+                </svg>
+              </div>
+              <div class="btn-store-text">
+                <span class="btn-store-small">Tải về trên</span>
+                <span class="btn-store-large">Google Play</span>
+              </div>
+            </a>
+
+            <!-- Apple App Store Button (Under Review) -->
+            <a href="#iosModal" class="btn-store app-store trigger-ios-modal" id="heroAppStoreBtn">
+              <div class="btn-store-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 0.92-2.87-.93.04-2.01.62-2.65 1.37-.56.65-.99 1.68-.86 2.7.99.08 2.02-.45 2.59-1.2z"/>
+                </svg>
+              </div>
+              <div class="btn-store-text">
+                <span class="btn-store-small">App Store <span class="btn-badge-status">Đang xét duyệt</span></span>
+                <span class="btn-store-large">iOS Download</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-value">50<span>+</span></div>
+              <div class="stat-label">Tiệm vàng toàn quốc</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">24<span>/7</span></div>
+              <div class="stat-label">Cập nhật realtime</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">100<span>%</span></div>
+              <div class="stat-label">Miễn phí trải nghiệm</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phone Visual Mockup -->
+        <div class="hero-visual">
+          <div class="phone-wrapper">
+            <!-- Floating micro-widget 1 -->
+            <div class="float-card float-card-1">
+              <div class="float-card-content">
+                <div class="float-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="float-text-title">Vàng SJC Tăng</div>
+                  <div class="float-text-desc">+300.000đ / chỉ</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating micro-widget 2 -->
+            <div class="float-card float-card-2">
+              <div class="float-card-content">
+                <div class="float-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                  </svg>
+                </div>
+                <div>
+                  <div class="float-text-title">Widget Màn Hình</div>
+                  <div class="float-text-desc">Xem nhanh 24/7</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phone Frame with Authentic App UI -->
+            <div class="phone-frame">
+              <div class="phone-screen-light" id="phoneScreen">
+                
+                <!-- Status Bar -->
+                <div class="app-status-bar">
+                  <span class="app-status-time" id="appClockTime">10:37</span>
+                  <div class="app-dynamic-island"></div>
+                  <div class="app-status-icons">
+                    <!-- Signal 4 bars -->
+                    <svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor">
+                      <rect x="0" y="8" width="2" height="3" rx="0.5"/>
+                      <rect x="4" y="5.5" width="2" height="5.5" rx="0.5"/>
+                      <rect x="8" y="3" width="2" height="8" rx="0.5"/>
+                      <rect x="12" y="0.5" width="2" height="10.5" rx="0.5"/>
+                    </svg>
+                    <!-- Wifi -->
+                    <svg width="13" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                      <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                      <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                      <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                      <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                    </svg>
+                    <!-- Battery -->
+                    <svg width="20" height="11" viewBox="0 0 24 13" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <rect x="1" y="1" width="19" height="11" rx="3"></rect>
+                      <path d="M22 4.5v4" stroke-linecap="round"></path>
+                      <rect x="3" y="3" width="12" height="7" rx="1.5" fill="currentColor"></rect>
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Timestamp row -->
+                <div class="app-timestamp-row">
+                  <span id="appLastUpdatedText">Cập nhật lúc: 11/10/2026 10:36</span>
+                </div>
+
+                <!-- Search & Filter Tune Row -->
+                <div class="app-search-filter-row">
+                  <div class="app-search-input-box">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#78716c" stroke-width="2.2">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="appSearchInput" placeholder="Tìm thương hiệu, mã sản phẩm..." autocomplete="off" />
+                  </div>
+                  <button class="app-filter-tune-btn" id="appFilterTuneBtn" aria-label="Bộ lọc">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="4" y1="21" x2="4" y2="14"></line>
+                      <line x1="4" y1="10" x2="4" y2="3"></line>
+                      <line x1="12" y1="21" x2="12" y2="12"></line>
+                      <line x1="12" y1="8" x2="12" y2="3"></line>
+                      <line x1="20" y1="21" x2="20" y2="16"></line>
+                      <line x1="20" y1="12" x2="20" y2="3"></line>
+                      <line x1="1" y1="14" x2="7" y2="14"></line>
+                      <line x1="9" y1="8" x2="15" y2="8"></line>
+                      <line x1="17" y1="16" x2="23" y2="16"></line>
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Dropdown Filter Chips Row -->
+                <div class="app-dropdown-filters-row">
+                  <div class="app-dropdown-filter-chip" id="filterDisplayChip">
+                    <span class="app-dropdown-filter-label">Hiển thị</span>
+                    <span class="app-dropdown-filter-val"><span id="filterDisplayVal">Toàn bộ</span> <span>▾</span></span>
+                  </div>
+                  <div class="app-dropdown-filter-chip" id="filterRegionChip">
+                    <span class="app-dropdown-filter-label">Khu vực</span>
+                    <span class="app-dropdown-filter-val">Tất cả <span>▾</span></span>
+                  </div>
+                  <div class="app-dropdown-filter-chip" id="filterBrandChip">
+                    <span class="app-dropdown-filter-label">Thương hiệu</span>
+                    <span class="app-dropdown-filter-val">Tất cả <span>▾</span></span>
+                  </div>
+                  <button class="app-add-source-btn" id="appAddSourceBtn" title="Thêm nguồn mới">+</button>
+                </div>
+
+                <!-- Column Header Row -->
+                <div class="app-list-col-header">
+                  <span class="app-col-brand-title">Thương hiệu</span>
+                  <span class="app-col-unit-title">x1000đ/chỉ</span>
+                </div>
+
+                <!-- Price Cards List matching Screenshot -->
+                <div class="app-screenshot-cards-list" id="appRealCardsList">
+                  <!-- Injected & controlled via JS -->
+                </div>
+
+                <!-- Mascot FAB (stack of gold bars) -->
+                <div class="app-screen-fab" title="Trợ lý Tích Chỉ Vàng">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#ca8a04">
+                    <path d="M4 18h16l-2-4H6l-2 4zm3-6h10l-2-4H9l-2 4zm2-6h6l-1.5-3h-3L9 6z"/>
+                  </svg>
+                </div>
+
+                <!-- Bottom Navigation Bar matching Screenshot -->
+                <nav class="app-bottom-dock">
+                  <button class="app-dock-item" data-tab="home">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                    </svg>
+                    <span>Trang chủ</span>
+                  </button>
+
+                  <button class="app-dock-item active" data-tab="gold">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-1c-1.66 0-3-.84-3-2.5 0-1.8 1.4-2.5 3-2.8V7.5c-.88.15-1.5.58-1.74 1.3H7.55c.29-1.51 1.63-2.58 3.45-2.77V5h2v1.03c1.65.17 3 .99 3 2.57 0 1.95-1.54 2.5-3 2.8v2.4c.95-.16 1.64-.63 1.9-1.4h1.71c-.31 1.6-1.65 2.55-3.61 2.6z"/>
+                    </svg>
+                    <span>Giá vàng</span>
+                  </button>
+
+                  <button class="app-dock-item" data-tab="portfolio">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                    </svg>
+                    <span>Sổ vàng</span>
+                  </button>
+
+                  <button class="app-dock-item" data-tab="news">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                    </svg>
+                    <span>Tin tức</span>
+                  </button>
+
+                  <button class="app-dock-item" data-tab="settings">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
+                    </svg>
+                    <span>Cài đặt</span>
+                  </button>
+                </nav>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Realtime Ticker Ribbon -->
+    <div class="ticker-strip" aria-hidden="true">
+      <div class="ticker-track">
+        <!-- Item Group 1 -->
+        <div class="ticker-item">
+          <span class="ticker-label">SJC TP.HCM</span>
+          <span class="ticker-price">Mua 88.50M / Bán 90.50M</span>
+          <span class="ticker-change up">▲ +300K</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-label">DOJI 999.9</span>
+          <span class="ticker-price">Mua 87.20M / Bán 88.90M</span>
+          <span class="ticker-change up">▲ +250K</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-label">PNJ 24K</span>
+          <span class="ticker-price">Mua 86.90M / Bán 88.40M</span>
+          <span class="ticker-change up">▲ +200K</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-label">Bảo Tín Minh Châu</span>
+          <span class="ticker-price">Mua 87.30M / Bán 88.90M</span>
+          <span class="ticker-change up">▲ +220K</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-label">Vàng Mi Hồng 9999</span>
+          <span class="ticker-price">Mua 87.50M / Bán 88.80M</span>
+          <span class="ticker-change up">▲ +150K</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-label">Bạc Phú Quý 999</span>
+          <span class="ticker-price">Mua 1.24M / Bán 1.28M</span>
+          <span class="ticker-change down">▼ -10K</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-label">Vàng Thế Giới (Kitco)</span>
+          <span class="ticker-price">$2,658.40 / oz</span>
+          <span class="ticker-change up">▲ +14.2$</span>
+        </div>
+
+        <!-- Repeated for seamless infinite scroll -->
+        <div class="ticker-item">
+          <span class="ticker-label">SJC TP.HCM</span>
+          <span class="ticker-price">Mua 88.50M / Bán 90.50M</span>
+          <span class="ticker-change up">▲ +300K</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-label">DOJI 999.9</span>
+          <span class="ticker-price">Mua 87.20M / Bán 88.90M</span>
+          <span class="ticker-change up">▲ +250K</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-label">PNJ 24K</span>
+          <span class="ticker-price">Mua 86.90M / Bán 88.40M</span>
+          <span class="ticker-change up">▲ +200K</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-label">Bảo Tín Minh Châu</span>
+          <span class="ticker-price">Mua 87.30M / Bán 88.90M</span>
+          <span class="ticker-change up">▲ +220K</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-label">Vàng Mi Hồng 9999</span>
+          <span class="ticker-price">Mua 87.50M / Bán 88.80M</span>
+          <span class="ticker-change up">▲ +150K</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-label">Bạc Phú Quý 999</span>
+          <span class="ticker-price">Mua 1.24M / Bán 1.28M</span>
+          <span class="ticker-change down">▼ -10K</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-label">Vàng Thế Giới (Kitco)</span>
+          <span class="ticker-price">$2,658.40 / oz</span>
+          <span class="ticker-change up">▲ +14.2$</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why Choose Section -->
+    <section class="why-section" id="why-us">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Giá Trị Cốt Lõi</div>
+          <h2 class="section-title">Vì Sao Nên Dùng Tích Chỉ Vàng?</h2>
+          <p class="section-desc">
+            Không còn phải mở từng website hay liên hệ từng tiệm vàng. Tích Chỉ Vàng mang toàn bộ thị trường vàng và bạc về ngay trong tầm tay bạn.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <!-- Item 1 -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="why-card-title">Hơn 50 Tiệm Vàng Toàn Quốc</h3>
+            <p class="why-card-desc">
+              Theo dõi giá vàng hôm nay SJC, 9999, 24K từ hơn 50 tiệm vàng và thương hiệu lớn, cập nhật đầy đủ và chính xác nhất.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3 class="why-card-title">Giá Mua & Bán Realtime</h3>
+            <p class="why-card-desc">
+              Xem rõ giá mua vào và bán ra của cả vàng và bạc trong thời gian thực, kèm chênh lệch giá để đưa ra quyết định tối ưu.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+              </svg>
+            </div>
+            <h3 class="why-card-title">Nhận Thông Báo Biến Động</h3>
+            <p class="why-card-desc">
+              Hệ thống cảnh báo tự động khi giá vàng có biến động lớn hoặc cập nhật mới nhất, giúp bạn chớp ngay cơ hội đầu tư.
+            </p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+            </div>
+            <h3 class="why-card-title">Widget Màn Hình Chính Siêu Tiện Lợi</h3>
+            <p class="why-card-desc">
+              Xem nhanh giá vàng ngay trên màn hình chính Home Screen điện thoại mà không cần phải mở ứng dụng. Tiện lợi mọi lúc mọi nơi.
+            </p>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h3 class="why-card-title">Tìm Kiếm, Lọc & Sắp Xếp Thông Minh</h3>
+            <p class="why-card-desc">
+              Tìm kiếm thương hiệu chỉ trong 1 giây, lọc theo yêu thích và sắp xếp tăng/giảm theo giá mua hoặc bán cực kỳ nhanh chóng.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 Core Features Section -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Tính Năng Toàn Diện</div>
+          <h2 class="section-title">10 Tính Năng Nổi Bật</h2>
+          <p class="section-desc">
+            Được thiết kế tỉ mỉ phục vụ tối đa nhu cầu của người theo dõi, tích lũy vàng và nhà đầu tư tại Việt Nam.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- 1 -->
+          <div class="feature-item">
+            <div class="feature-num-box">01</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Theo Dõi Theo Thương Hiệu & Nguồn</h3>
+              <ul class="feature-desc-list">
+                <li>Xem giá vàng từ hơn 50 tiệm vàng và nhiều nguồn uy tín</li>
+                <li>Theo dõi các loại vàng phổ biến: SJC, vàng 9999, vàng 24K, vàng tây</li>
+                <li>So sánh chênh lệch giá giữa các thương hiệu nhanh chóng</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="feature-item">
+            <div class="feature-num-box">02</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Hiển Thị Giá Mua/Bán & Timestamp</h3>
+              <ul class="feature-desc-list">
+                <li>Cập nhật giá vàng hôm nay theo thời gian thực</li>
+                <li>Hiển thị rõ ràng hai chiều: giá mua vào và bán ra</li>
+                <li>Có mốc thời gian (timestamp) để bạn đánh giá độ mới của dữ liệu</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="feature-item">
+            <div class="feature-num-box">03</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Cập Nhật Realtime (Vuốt Để Làm Mới)</h3>
+              <ul class="feature-desc-list">
+                <li>Chỉ cần kéo xuống để cập nhật giá vàng mới nhất lập tức</li>
+                <li>Chủ động kiểm tra biến động giá vàng bất cứ lúc nào</li>
+                <li>Tốc độ phản hồi cực nhanh, không làm chậm điện thoại</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="feature-item">
+            <div class="feature-num-box">04</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Tìm Kiếm Nhanh Chóng</h3>
+              <ul class="feature-desc-list">
+                <li>Tìm kiếm tiệm vàng, thương hiệu hoặc nguồn giá trong tích tắc</li>
+                <li>Gợi ý thông minh ngay khi gõ từ khóa đầu tiên</li>
+                <li>Tối ưu trải nghiệm khi theo dõi danh sách nhiều nguồn khác nhau</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="feature-item">
+            <div class="feature-num-box">05</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Đánh Dấu Yêu Thích</h3>
+              <ul class="feature-desc-list">
+                <li>Lưu lại các tiệm vàng hoặc nguồn bạn quan tâm hàng ngày</li>
+                <li>Ghim lên đầu danh sách để theo dõi trong 1 nốt nhạc</li>
+                <li>Dễ dàng quản lý và chỉnh sửa danh mục theo ý muốn</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="feature-item">
+            <div class="feature-num-box">06</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Bộ Lọc Thông Minh Đa Dạng</h3>
+              <ul class="feature-desc-list">
+                <li>Lọc xem <strong>Tất cả</strong> các nguồn có sẵn</li>
+                <li>Lọc xem riêng danh sách <strong>Yêu thích</strong></li>
+                <li>Lọc linh hoạt <strong>Theo thương hiệu</strong> (SJC, DOJI, PNJ, BTMC...)</li>
+                <li>Lọc danh sách nguồn <strong>Tự thêm</strong> của riêng bạn</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="feature-item">
+            <div class="feature-num-box">07</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Sắp Xếp Linh Hoạt</h3>
+              <ul class="feature-desc-list">
+                <li>Sắp xếp ưu tiên theo giá mua hoặc theo giá bán</li>
+                <li>Lựa chọn sắp xếp tăng dần hoặc giảm dần</li>
+                <li>Nhanh chóng phát hiện nơi bán rẻ nhất hoặc nơi thu mua giá cao nhất</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="feature-item">
+            <div class="feature-num-box">08</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Tự Thêm / Chỉnh Sửa Nguồn Giá</h3>
+              <ul class="feature-desc-list">
+                <li>Tạo nguồn giá vàng cá nhân theo tiệm vàng quen gần nhà</li>
+                <li>Phù hợp hoàn hảo với người theo dõi giá riêng biệt</li>
+                <li>Quản lý và điều chỉnh dữ liệu cục bộ linh hoạt, bảo mật</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 9 -->
+          <div class="feature-item">
+            <div class="feature-num-box">09</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Widget Màn Hình Chính Tiện Dụng</h3>
+              <ul class="feature-desc-list">
+                <li>Xem nhanh giá vàng hôm nay ngay trên màn hình khóa & Home Screen</li>
+                <li>Không cần mở app vẫn liên tục nắm bắt biến động giá</li>
+                <li>Hiển thị trực quan, hỗ trợ nhiều kích thước (Compact & Wide)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 10 -->
+          <div class="feature-item">
+            <div class="feature-num-box">10</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Thông Báo Giá Vàng Thông Minh</h3>
+              <ul class="feature-desc-list">
+                <li>Nhận cảnh báo ngay khi giá vàng có tín hiệu tăng hoặc giảm mạnh</li>
+                <li>Không bỏ lỡ cơ hội mua gom tích lũy hoặc chốt lời kịp thời</li>
+                <li>Hỗ trợ ra quyết định mua bán vàng và bạc nhanh hơn, chủ động hơn</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Widget Spotlight Section -->
+    <section class="widget-section" id="widget">
+      <div class="container">
+        <div class="widget-wrapper">
+          <div class="widget-info">
+            <div class="section-tag">Home Screen Widget</div>
+            <h2 class="widget-title">Theo Dõi Giá Vàng Trong Chớp Mắt Với Widget</h2>
+            <p class="widget-desc">
+              Widget được tối ưu hóa cho cả Android và iOS, tự động làm mới ngầm giúp bạn liếc qua màn hình là biết ngay giá vàng SJC, nhẫn 9999 hay giá bạc đang biến động ra sao.
+            </p>
+
+            <ul class="widget-features-list">
+              <li>
+                <span class="check-icon-gold">✓</span>
+                <span>Xem giá mua / bán ngay trên màn hình chính, không cần mở app</span>
+              </li>
+              <li>
+                <span class="check-icon-gold">✓</span>
+                <span>Tùy chỉnh chọn nguồn tiệm vàng yêu thích hiển thị ngoài widget</span>
+              </li>
+              <li>
+                <span class="check-icon-gold">✓</span>
+                <span>Hỗ trợ nhiều kích thước: Compact (2x2) và Wide (4x2)</span>
+              </li>
+              <li>
+                <span class="check-icon-gold">✓</span>
+                <span>Tiết kiệm pin tối đa, cập nhật mượt mà ổn định</span>
+              </li>
+            </ul>
+
+            <div>
+              <a href="https://play.google.com/store/apps/details?id=com.dat.tichchi&hl=en" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="widgetGetBtn">
+                <span>Cài Đặt Widget Ngay</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Widget Preview -->
+          <div class="widget-display">
+            <div class="widget-switcher">
+              <button class="widget-switch-btn active" data-widget="compact">Widget 2x2 (Nhỏ)</button>
+              <button class="widget-switch-btn" data-widget="wide">Widget 4x2 (Rộng)</button>
+            </div>
+
+            <div class="widget-preview-box" id="widgetPreviewBox">
+              <div class="widget-mockup-header">
+                <div class="widget-mockup-brand">
+                  <img src="assets/app-icon.jpg" alt="Icon" width="20" height="20" style="border-radius: 5px;" />
+                  <span id="widgetPreviewTitle">Widget 2x2 - Tiêu điểm</span>
+                </div>
+                <div class="widget-mockup-time live-time-now">Vừa xong</div>
+              </div>
+
+              <div class="widget-rows" id="widgetPreviewRows">
+                <!-- Dynamically filled by JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="audience-section" id="audience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Đối Tượng Người Dùng</div>
+          <h2 class="section-title">Tích Chỉ Vàng Phù Hợp Với Ai?</h2>
+          <p class="section-desc">
+            Dù bạn là người mua tích sản dài hạn, người kinh doanh hay chỉ đơn giản muốn nắm bắt tin tức thị trường:
+          </p>
+        </div>
+
+        <div class="audience-grid">
+          <!-- Audience 1 -->
+          <div class="audience-card">
+            <div class="audience-icon">📅</div>
+            <h3 class="audience-title">Người Theo Dõi Hàng Ngày</h3>
+            <p class="audience-desc">
+              Những ai quan tâm tới thị trường tài chính, theo dõi giá vàng và giá bạc hôm nay mỗi ngày để cập nhật tin tức kinh tế.
+            </p>
+          </div>
+
+          <!-- Audience 2 -->
+          <div class="audience-card">
+            <div class="audience-icon">⚖️</div>
+            <h3 class="audience-title">Người Cần So Sánh Nhiều Tiệm</h3>
+            <p class="audience-desc">
+              Người có nhu cầu so sánh giá giữa SJC, DOJI, PNJ, Mi Hồng, Bảo Tín để tìm địa điểm mua rẻ nhất hoặc bán được giá cao nhất.
+            </p>
+          </div>
+
+          <!-- Audience 3 -->
+          <div class="audience-card">
+            <div class="audience-icon">⚡</div>
+            <h3 class="audience-title">Người Thích Tiện Lợi & Nhanh</h3>
+            <p class="audience-desc">
+              Những người bận rộn yêu thích widget ngoài màn hình chính và nhận thông báo biến động tự động mà không mất công tra cứu thủ công.
+            </p>
+          </div>
+
+          <!-- Audience 4 -->
+          <div class="audience-card">
+            <div class="audience-icon">🏆</div>
+            <h3 class="audience-title">Người Tích Lũy Vàng & Bạc</h3>
+            <p class="audience-desc">
+              Người đam mê tích sản vàng miếng SJC, vàng nhẫn 9999, vàng 24K hoặc đầu tư bạc vật chất làm kênh bảo toàn tài sản.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download CTA Section -->
+    <section class="cta-section" id="download">
+      <div class="container">
+        <div class="cta-box">
+          <h2 class="cta-title">Tải Tích Chỉ Vàng Ngay Hôm Nay</h2>
+          <p class="cta-subtitle">
+            Theo dõi giá vàng, giá bạc nhanh hơn, chính xác hơn và chủ động hơn mỗi ngày cùng hơn 50 tiệm vàng trên toàn quốc.
+          </p>
+
+          <div class="cta-actions-wrap">
+            <!-- Google Play Store Button -->
+            <a href="https://play.google.com/store/apps/details?id=com.dat.tichchi&hl=en" target="_blank" rel="noopener noreferrer" class="btn-store google-play" id="ctaGooglePlayBtn">
+              <div class="btn-store-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M3.609 1.814L13.792 12 3.61 22.186a2.38 2.38 0 0 1-.61-.944V2.758c.175-.36.386-.684.609-.944zm11.306 11.308l2.257 2.257-11.758 6.786 9.501-9.043zm2.258-2.258l-2.258 2.258-9.501-9.043 11.759 6.785zm1.127 1.128l3.414 1.972c1.066.616 1.066 1.623 0 2.239l-3.414 1.972-2.37-2.091 2.37-2.092z"/>
+                </svg>
+              </div>
+              <div class="btn-store-text">
+                <span class="btn-store-small">Tải về trên</span>
+                <span class="btn-store-large">Google Play</span>
+              </div>
+            </a>
+
+            <!-- App Store Button (Under Review) -->
+            <a href="#iosModal" class="btn-store app-store trigger-ios-modal" id="ctaAppStoreBtn">
+              <div class="btn-store-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 0.92-2.87-.93.04-2.01.62-2.65 1.37-.56.65-.99 1.68-.86 2.7.99.08 2.02-.45 2.59-1.2z"/>
+                </svg>
+              </div>
+              <div class="btn-store-text">
+                <span class="btn-store-small">App Store <span class="btn-badge-status">Đang xét duyệt</span></span>
+                <span class="btn-store-large">iOS Download</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- QR Code for fast mobile scan -->
+          <div class="cta-qr-box">
+            <div class="cta-qr-img">
+              <img src="assets/qr-code.png" alt="Quét mã QR tải app Android" width="64" height="64" />
+            </div>
+            <div class="cta-qr-text">
+              <div class="cta-qr-text-title">Quét mã QR để tải ngay</div>
+              <div class="cta-qr-text-desc">Mở camera điện thoại quét mã để tải nhanh trên Google Play</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- iOS Review Modal -->
+  <div class="modal-overlay" id="iosModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Đóng">&times;</button>
+      <div class="modal-icon-badge">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 0.92-2.87-.93.04-2.01.62-2.65 1.37-.56.65-.99 1.68-.86 2.7.99.08 2.02-.45 2.59-1.2z"/>
+        </svg>
+      </div>
+      <h3 class="modal-title" id="modalTitle">Phiên Bản iOS Đang Xét Duyệt</h3>
+      <p class="modal-desc">
+        Ứng dụng Tích Chỉ Vàng cho iOS hiện đang được đội ngũ Apple kiểm duyệt trên App Store. Đường dẫn tải chính thức sẽ được cập nhật ngay khi được phê duyệt!
+      </p>
+
+      <div class="modal-info-box">
+        <div class="modal-info-row">
+          <span class="modal-info-label">Trạng thái Apple:</span>
+          <span class="modal-info-val">In Review (Đang xét duyệt)</span>
+        </div>
+        <div class="modal-info-row">
+          <span class="modal-info-label">Hệ điều hành hỗ trợ:</span>
+          <span class="modal-info-val">iOS 16.0 trở lên</span>
+        </div>
+        <div class="modal-info-row">
+          <span class="modal-info-label">Email hỗ trợ:</span>
+          <span class="modal-info-val">tichchivangapp@gmail.com</span>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <a href="https://play.google.com/store/apps/details?id=com.dat.tichchi&hl=en" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modalGoPlayBtn">
+          <span>Xem bản Android trên Google Play</span>
+        </a>
+        <button class="btn btn-secondary" id="copyEmailBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span>Sao chép email hỗ trợ</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-info">
+          <a href="#" class="brand">
+            <div class="brand-icon">
+              <img src="assets/app-icon.jpg" alt="Icon Tích Chỉ Vàng" width="44" height="44" />
+            </div>
+            <div class="brand-text-wrap">
+              <span class="brand-title">Tích Chỉ Vàng</span>
+              <span class="brand-subtitle">Giá Vàng & Bạc Realtime</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Ứng dụng theo dõi giá vàng, giá bạc toàn diện, nhanh chóng và chuẩn xác tại Việt Nam với hơn 50 tiệm vàng, widget màn hình chính và thông báo tức thì.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Điều Hướng</h4>
+          <ul class="footer-links">
+            <li><a href="#why-us" class="footer-link">Vì sao chọn</a></li>
+            <li><a href="#features" class="footer-link">10 Tính năng nổi bật</a></li>
+            <li><a href="#widget" class="footer-link">Widget màn hình chính</a></li>
+            <li><a href="#audience" class="footer-link">Đối tượng phù hợp</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Chính Sách & Pháp Lý</h4>
+          <ul class="footer-links">
+            <li><a href="terms_and_conditions.html" class="footer-link">Điều khoản sử dụng</a></li>
+            <li><a href="privacy_policy.html" class="footer-link">Chính sách riêng tư</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Hỗ Trợ & Liên Hệ</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" style="flex-shrink: 0; margin-top: 3px;">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <div>
+              <span>Email hỗ trợ:</span><br/>
+              <a href="mailto:tichchivangapp@gmail.com">tichchivangapp@gmail.com</a>
+            </div>
+          </div>
+          <p style="font-size: 0.8rem; color: #64748b; margin-top: 10px;">
+            Mọi thắc mắc, phản hồi hoặc yêu cầu hỗ trợ nguồn giá mới vui lòng gửi thư về email hỗ trợ của chúng tôi.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Tích Chỉ Vàng. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="terms_and_conditions.html">Điều khoản</a>
+          <a href="privacy_policy.html">Chính sách</a>
+          <a href="mailto:tichchivangapp@gmail.com">Liên hệ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="style/main.js"></script>
+</body>
+</html>
