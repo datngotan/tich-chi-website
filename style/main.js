@@ -376,50 +376,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderWidget("compact");
 
-  // 6. App Store Modal Handling
-  const iosModal = document.getElementById("iosModal");
-  const openModalBtns = document.querySelectorAll(".trigger-ios-modal");
-  const closeModalBtn = document.getElementById("closeModalBtn");
-  const copyEmailBtn = document.getElementById("copyEmailBtn");
-
-  function openModal() {
-    if (iosModal) {
-      iosModal.classList.add("active");
-      document.body.style.overflow = "hidden";
-    }
-  }
-
-  function closeModal() {
-    if (iosModal) {
-      iosModal.classList.remove("active");
-      document.body.style.overflow = "";
-    }
-  }
-
-  openModalBtns.forEach(btn => {
-    btn.addEventListener("click", (e) => {
-      e.preventDefault();
-      openModal();
-    });
-  });
-
-  if (closeModalBtn) {
-    closeModalBtn.addEventListener("click", closeModal);
-  }
-
-  if (iosModal) {
-    iosModal.addEventListener("click", (e) => {
-      if (e.target === iosModal) {
-        closeModal();
-      }
-    });
-  }
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && iosModal && iosModal.classList.contains("active")) {
-      closeModal();
-    }
-  });
 
   // 7. Copy Email helper & Toast
   function showToast(message) {
