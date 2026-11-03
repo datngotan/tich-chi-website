@@ -1,13 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Bàn Làm Việc Nâng Hạ Mặt Xoay 360°",
-      "price": 1449000,
-      "image": "https://down-bs-vn.img.susercontent.com/vn-11134207-81ztc-mpbpv4ng7b4be3.webp",
-      "link": "https://s.shopee.vn/40gth1dmnt"
-    },
-    {
       "id": 2,
       "name": "Đồng vàng 24K Khuê Văn Các 0.1 chỉ tặng bao bì Vinh Quy Hiển Đạt, Kim Thư Vinh Hiển - Bảo Tín Mạnh Hải",
       "price": 1507000,
